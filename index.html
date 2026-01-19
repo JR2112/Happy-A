@@ -65,6 +65,7 @@
       font-size:clamp(2rem,6vw,3.2rem);
       margin-bottom:10px;
       color:#ff5fa2;
+      -webkit-text-stroke: 1.5px #fff;
       text-shadow:
         0 0 8px rgba(255,95,162,.6),
         0 0 16px rgba(255,95,162,.6),
@@ -72,6 +73,15 @@
       animation: sparkle 2.5s infinite alternate;
     }
     header p{font-size:1.2rem}
+    .jaruwan{
+      color:#ff5fa2;
+      -webkit-text-stroke: 1.2px #fff;
+      text-shadow:
+        0 0 8px rgba(255,95,162,.6),
+        0 0 16px rgba(255,95,162,.6),
+        0 0 32px rgba(255,95,162,.9);
+      animation: sparkle 2.5s infinite alternate;
+    }
 
     /* ===== Floating Hearts ===== */
     .heart{position:fixed; bottom:-40px; font-size:24px; animation: float 8s linear infinite; opacity:.8}
@@ -142,7 +152,29 @@
       line-height:1.8;
     }
 
-    footer{text-align:center; padding:30px; opacity:.9}
+    footer{
+      text-align:center;
+      padding:30px;
+      opacity:.95;
+      font-size:1.4rem;
+    }
+    .forever{
+      color:#ff5fa2;
+      -webkit-text-stroke: 1.2px #fff;
+      text-shadow:
+        0 0 8px rgba(255,95,162,.6),
+        0 0 16px rgba(255,95,162,.6),
+        0 0 32px rgba(255,95,162,.9);
+      animation: sparkle 2.5s infinite alternate;
+    }
+
+    .timeline-title{
+      text-align:center;
+      color:#ff5fa2;
+      -webkit-text-stroke: 1.2px #fff;
+      text-shadow:none;
+      margin-bottom:30px;
+    }
 
     @keyframes sparkle{
       from{
@@ -207,7 +239,7 @@
 
 <header>
   <h1>ℍ𝕒𝕡𝕡𝕪 𝟛-𝕞𝕠𝕟𝕥𝕙 𝕒𝕟𝕟𝕚𝕧𝕖𝕣𝕤𝕒𝕣𝕪, 𝕁𝕒𝕣𝕦𝕨𝕒𝕟💖</h1>
-  <p>เว็บนี้ทำมาเพื่อเซอร์ไพรส์วันครบรอบ 𝕁𝕒𝕣𝕦𝕨𝕒𝕟💖</p>
+  <p> <span class="jaruwan">เว็บนี้ทำมาเพื่อเซอร์ไพรส์วันครบรอบ 𝕁𝕒𝕣𝕦𝕨𝕒𝕟</span> 💖</p>
 </header>
 
 <!-- Music Control Button -->
@@ -243,7 +275,7 @@
 </div>
 
 <section class="timeline-wrap">
-  <h2 style="text-align:center">ไทม์ไลน์ของเราทั้ง2 💞</h2>
+  <h2 class="timeline-title">ไทม์ไลน์ของเราทั้ง2 💞</h2>
   <div class="timeline">
     <div class="event left">
       <div class="box"><b>วันแรกเราได้คบกัน</b><br>ดีใจที่จะได้ใช้ชีวิตร่วมกัน</div>
@@ -258,7 +290,7 @@
 </section>
 
 <div class="message">
-  <h2>จดหมายฉบับนี้ฝากให้ถึง 𝕁𝕒𝕣𝕦𝕨𝕒𝕟💖 💌</h2>
+  <h2>จดหมายฉบับนี้ฝากให้ถึง <span class="jaruwan">𝕁𝕒𝕣𝕦𝕨𝕒𝕟</span> 💖 💌</h2>
   <p>
     ขอบคุณที่เข้ามาเป็นรอยยิ้มถึงจะหน้าบูดบ้าง ก็เป็นความสุข
     และเป็นทุกอย่างที่ทำให้แต่ละวันพิเศษขึ้น อยากขอให้อยู่กับไอซ์ไปนานๆ
@@ -269,7 +301,7 @@
 </div>
 
 <footer>
-  อยู่ด้วยกันกับออมไปนานๆนะจ้ะจ๋า❤️
+  <span class="forever">อยู่ด้วยกันกับออมไปนานๆนะจ้ะจ๋า❤️</span>
 </footer>
 
 <script>
